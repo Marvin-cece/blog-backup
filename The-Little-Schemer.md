@@ -281,6 +281,25 @@ l 是(((tomato sauce)) ((bean) sauce) (and ((flying)) sauce))
 
 (n + 3) 不是算术表达式，因为没有定义括号。如果定义了就可以。
 
+## set
+是否有出现重复得原子，出现则不是一个集合。
+```
+(define set?
+ (lambda (lat)
+   (cond
+     ((null? lat) #t)
+     (else (cond
+             ((member? (car lat) (cdr lat)) #f)
+             (else (set? (cdr lat))))))))
+简化set?
+
+(define set?
+ (lambda (lat)
+   (cond
+     ((null? lat) #t)
+     ((member? (car lat) (cdr lat)) #f)
+     (else (set? (cdr lat))))))
+```
 
 ## 化简和辅助函数
 (value y) 的值是多少，其中 x 是(1 + (3 ^ 4))。82。
