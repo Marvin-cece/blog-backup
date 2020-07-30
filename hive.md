@@ -1,10 +1,10 @@
 # Hive
 ### 功能:
 存储和etl(数据分析)。hive是基于hadoop的，用hdfs存储，mapreduce做计算/数据分析。
-https://raw.githubusercontent.com/Marvin-cece/Image-Hosting/master/hive/hive%E6%9E%B6%E6%9E%84%E5%9B%BE.png
+![hive架构图](https://raw.githubusercontent.com/Marvin-cece/Image-Hosting/master/hive/hive%E6%9E%B6%E6%9E%84%E5%9B%BE.png)
 
 ### hive架构组件：
-https://github.com/Marvin-cece/Image-Hosting/blob/master/hive/hive%E8%BF%87%E7%A8%8B.png
+![hive组成部分](https://github.com/Marvin-cece/Image-Hosting/blob/master/hive/hive%E8%BF%87%E7%A8%8B.png)
 
 用户接口：(cli shell命令行、jdbc/odbc代码、webgui浏览器)，用于输入sql。
 
